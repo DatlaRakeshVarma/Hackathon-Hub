@@ -38,7 +38,7 @@ const AdminPage: React.FC = () => {
   useEffect(() => {
     const fetchPendingHackathons = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/hackathons/pending', {
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/hackathons/pending`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -60,7 +60,7 @@ const AdminPage: React.FC = () => {
 
   const handleApprove = async (id: string) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/hackathons/${id}/approve`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/hackathons/${id}/approve`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -78,7 +78,7 @@ const AdminPage: React.FC = () => {
 
   const handleReject = async (id: string) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/hackathons/${id}/reject`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/hackathons/${id}/reject`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${token}`
