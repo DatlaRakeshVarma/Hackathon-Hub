@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h2>
             <p className="text-gray-600 mb-4">
-              HackathonHub was created with a simple mission: to make it easier for students to discover and participate in hackathons happening at regional engineering colleges, with a special focus on Visakhapatnam.
+              HackathonHub was created with a simple mission: to make it easier for students to discover and participate in hackathons happening at regional engineering colleges.
             </p>
             <p className="text-gray-600 mb-4">
               We believe that hackathons are incredible opportunities for students to learn new skills, build innovative projects, network with peers and industry professionals, and showcase their talents.
